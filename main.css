@@ -5,8 +5,13 @@
 }
 
 body {
-  background-image: url("restint.jpg");
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("restint.jpg");
+
   background-attachment: fixed;
+  background-size: cover;
 
 }
 
@@ -18,4 +23,38 @@ header {
 
 header:hover {
   text-shadow: 4px 4px 8px #083dcb;
+}
+.col {
+    display: table-cell;
+    vertical-align: top;
+    margin: 1% 0 1% 0;
+}
+
+.preamble,.summary,.explanation,.participation,.benefits,.requirements{
+	border: 2px solid grey;
+	border-radius: 5px;
+	margin:10px; 
+	padding:20px;
+}
+
+#zen-summary{
+	width:50%;
+}
+.explanation{
+	position: absolute;
+	
+    padding-top: 52px;
+	left:0em;
+}
+
+
+.explanation, .participation{
+	width: 45%;
+	display:inline-block;
+	position:relative;
+}
+.main-supporting{
+	position:relative;
+	display:inline-block;
+
 }
